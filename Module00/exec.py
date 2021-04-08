@@ -2,13 +2,13 @@ import sys
 
 def reverse_string(string):
     string  = string[::-1]
-    reversed_string = ""
+    new_string = ""
     for i in string:
         if i.isupper():
-            reversed_string += i.lower()
+            new_string += i.lower()
         else:
-            reversed_string += i.upper()
-    return reversed_string
+            new_string += i.upper()
+    return new_string
 
 
 if __name__=='__main__' :
