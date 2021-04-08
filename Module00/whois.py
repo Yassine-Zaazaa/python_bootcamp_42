@@ -1,9 +1,9 @@
 import sys
 
-def even_odd_zero(number):
-    if number % 2 == 0:
+def even_odd_zero(num):
+    if num % 2 == 0:
         print("I'm Even.")
-    elif number == 0:
+    elif num == 0:
         print("I'm Zero.")
     else:
         print("I'm Odd.")
