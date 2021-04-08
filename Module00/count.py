@@ -3,7 +3,7 @@ import string
 def text_analyzer(text = ""):
     uppers = 0
     lowers = 0
-    punctuation = 0
+    punctuations = 0
     space = 0
     for i in text:
         if i == " ":
@@ -13,7 +13,7 @@ def text_analyzer(text = ""):
         elif i.islower():
             lowers += 1
         elif i in string.punctuation:
-            punctuation += 1
+            punctuations += 1
     if text == "":
         text = input("What is the text to analyse?\n")
         return text_analyzer(text)
@@ -21,5 +21,5 @@ def text_analyzer(text = ""):
     print("The text contains " + str(len(text)) + " characters:")
     print("- " + str(uppers) + " upper letters")
     print("- " + str(lowers) + " lower letters")
-    print("- " + str(punctuation) + " punctuation marks")
+    print("- " + str(punctuations) + " punctuation marks")
     print("- " + str(space) + " spaces")
